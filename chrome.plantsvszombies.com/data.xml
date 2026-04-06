@@ -24,7 +24,7 @@
   
   <upsell>
     <enabled>true</enabled>
-    <url>http://www.popcap.com/games/pvz/?icid=pvz_upsell_ingame</url>
+    <url>https://store.steampowered.com/app/3590/Plants_vs_Zombies_GOTY_Edition/</url>
   </upsell>
   
   <cheats>

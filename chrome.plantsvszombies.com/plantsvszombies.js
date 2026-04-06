@@ -13,8 +13,8 @@ let opens = _____WB$wombat$assign$function_____("opens");
 *******************************************************************************/
 
 // Upsell Settings
-var Enable_Upsell = false;
-var Upsell_Url = 'https://web.archive.org/web/20120415203346/http://www.popcap.com/games/pvz/?cid=cws_pvz_CA'; // This doesn't get used if Enable_Upsell = false
+var Enable_Upsell = true;
+var Upsell_Url = 'https://store.steampowered.com/app/3590/Plants_vs_Zombies_GOTY_Edition/'; // This doesn't get used if Enable_Upsell = false
 
 // Absolute Path to Game Files
 // (If left blank, it will be assumed that the game files are in the same folder as this include file.)
