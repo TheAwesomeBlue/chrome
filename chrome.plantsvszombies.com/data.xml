@@ -15,7 +15,7 @@
   </saveData>
   
   <MSN>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <!-- This value should be in MILLISECONDS -->
     <!-- The minimum value is 1000 -->
     <loadBroadcastRate>3000</loadBroadcastRate>
@@ -23,7 +23,7 @@
   </MSN>
   
   <upsell>
-    <enabled>false</enabled>
+    <enabled>true</enabled>
     <url>http://www.popcap.com/games/pvz/?icid=pvz_upsell_ingame</url>
   </upsell>
   
