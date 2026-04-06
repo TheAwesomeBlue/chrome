@@ -12,7 +12,7 @@
 
 <html>
   <head>
-    <base href="https://theawesomeblue.github.io/chrome/chrome.angrybirds.com_11/" />
+    <base href="https://theawesomeblue.github.io/chrome/chrome.angrybirds.com/" />
     <title>Angry Birds Chrome</title>
     <meta name="Title" content="Angry Birds Chrome">
     <meta name="description" content="Play Angry Birds online in HD with Google Chrome">
@@ -125,16 +125,11 @@
           <table class="content-table">
             <tr>
               <td>
-                <!--<iframe id="left-banner" class="ads" src="left_banner.html" width="120px" height="600px" frameborder=0
-                seamless="true" scrolling="no">
-                </iframe>-->
-              </td>
-              <td>
 
           <div class="gamecont" id="content">
             <div id='loginInfo'></div>
             
-            <div style="display: inline-block;">
+            <div id='gameDiv' style="display: inline-block;">
               <div id='playn-root'>
                 <div id="loading">
                   <img src="/images/loading_image_bird.png" />
@@ -145,8 +140,6 @@
               <div id="ingameframecontainer"></div>
               <div id="cornerframecontainer1"></div>
             </div>
-            <a id="spaceButton" href="#" style="display: none;" onclick="backToChromeClicked(); return false;"></a>
-            <a id="spaceShopButton" href="#" style="display: none;" onclick="spaceShopClicked(); return false;"></a>
             <div class='buttons'>
               <div class='buttoncontainer'>
                 
@@ -173,7 +166,7 @@
 
                 
                 <a href="#" class="loginButton" id="login"></a>
-                <a href="http://www.rovio.com/en/support/faq&support_device=Chrome" id="faqButton" onmouseover="tooltip.innerHTML = 'Frequently Asked Questions'" onmouseout="resetTooltip();" onclick="externalLink('FAQ'); window.open('http://www.rovio.com/en/support/faq&support_device=Chrome', '_newtab'); return false;"></a>
+                <a href="http://www.rovio.com/en/support/faq&support_category_id=36" id="faqButton" onmouseover="tooltip.innerHTML = 'Frequently Asked Questions'" onmouseout="resetTooltip();" onclick="externalLink('FAQ'); window.open('http://www.rovio.com/en/support/faq&support_category_id=36', '_blank'); return false;"></a>
 
               </div>
               
@@ -181,8 +174,8 @@
               <div id='social-container'>
                 <a id="twitterButton" href="https://twitter.com/share" class="twitter-share-button">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 <iframe id="fb-like-iframe" src="http://www.facebook.com/plugins/like.php?app_id=167680559959348&href=http%3A%2F%2Fwww.facebook.com%2Fangrybirds&send=false&layout=button_count&ref=chrome.angrybirds.com&width=100&show_faces=false&action=like&colorscheme=dark&font&height=25"
-                scrolling="no" frameborder="0" style="visibility: hidden; border:none; overflow:hidden; width:120px; height:25px;" allowTransparency="true"></iframe>
-                <a href="https://www.google.com/chrome" id="optimized" onclick="externalLink('Optimized for Chrome'); window.open('https://www.google.com/chrome', '_newtab'); return false;"></a>
+                scrolling="no" frameborder="0" style="visibility: hidden; border:none; overflow:hidden; width:160px; height:25px;" allowTransparency="true"></iframe>
+                <a href="https://www.google.com/chrome" id="optimized" onclick="externalLink('Optimized for Chrome'); window.open('https://www.google.com/chrome', '_blank'); return false;"></a>
               </div>
 
               
@@ -194,12 +187,8 @@
             </div>
           </div>
 
-              </td>
-              <td>
-                <!--<iframe id="right-banner" class="ads" src="right_banner.html" width="120px" height="600px" frameborder=0
-                seamless="true" scrolling="no">
-                </iframe>-->
-              </td>
+            </td>
+            </td>
             </tr>
           </table>
 
