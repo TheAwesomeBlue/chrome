@@ -367,7 +367,7 @@ thePopCapGame = new popCapFlashGame("Plants Vs. Zombies",
 	'GameObject',
 	'540',
 	'405',
-	'pvz_8_21.swf');
+	'pvz_9_15.swf');
 
 /******************************************************************************
 *     PARTNER-SPECIFIC SETTINGS
