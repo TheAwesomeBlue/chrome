@@ -1,25 +1,12 @@
-
-
-
-
-
-/*
-     FILE ARCHIVED ON 9:32:13 Mar 5, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 15:14:11 Aug 31, 2016.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
 /** @license
  *
  * SoundManager 2: JavaScript Sound for the Web
  * ----------------------------------------------
- * /web/20160305093213/http://schillmania.com/projects/soundmanager2/
+ * http://schillmania.com/projects/soundmanager2/
  *
  * Copyright (c) 2007, Scott Schiller. All rights reserved.
  * Code provided under the BSD License:
- * /web/20160305093213/http://schillmania.com/projects/soundmanager2/license.txt
+ * http://schillmania.com/projects/soundmanager2/license.txt
  *
  * V2.97a.20110918
  */
@@ -34,7 +21,7 @@
  * recommended for use during development and testing.
  *
  * See soundmanager2-nodebug-jsmin.js for an optimized build (~10KB with gzip.)
- * /web/20160305093213/http://schillmania.com/projects/soundmanager2/doc/getstarted/#basic-inclusion
+ * http://schillmania.com/projects/soundmanager2/doc/getstarted/#basic-inclusion
  * Alternately, serve this file with gzip for 75% compression savings (~30KB over HTTP.)
  *
  * You may notice <d> and </d> comments in this source; these are delimiters for
@@ -274,7 +261,7 @@ function SoundManager(smURL, smID) {
   var SMSound,
   _s = this, _sm = 'soundManager', _smc = _sm+'::', _h5 = 'HTML5::', _id, _ua = navigator.userAgent, _win = window, _wl = _win.location.href.toString(), _doc = document, _doNothing, _init, _fV, _on_queue = [], _debugOpen = true, _debugTS, _didAppend = false, _appendSuccess = false, _didInit = false, _disabled = false, _windowLoaded = false, _wDS, _wdCount = 0, _initComplete, _mixin, _addOnEvent, _processOnEvents, _initUserOnload, _delayWaitForEI, _waitForEI, _setVersionInfo, _handleFocus, _strings, _initMovie, _domContentLoaded, _didDCLoaded, _getDocument, _createMovie, _catchError, _setPolling, _initDebug, _debugLevels = ['log', 'info', 'warn', 'error'], _defaultFlashVersion = 8, _disableObject, _failSafely, _normalizeMovieURL, _oRemoved = null, _oRemovedHTML = null, _str, _flashBlockHandler, _getSWFCSS, _toggleDebug, _loopFix, _policyFix, _complain, _idCheck, _waitingForEI = false, _initPending = false, _smTimer, _onTimer, _startTimer, _stopTimer, _needsFlash = null, _featureCheck, _html5OK, _html5CanPlay, _html5Ext, _html5Unload, _domContentLoadedIE, _testHTML5, _event, _slice = Array.prototype.slice, _useGlobalHTML5Audio = false, _hasFlash, _detectFlash, _badSafariFix, _html5_events, _showSupport,
   _is_iDevice = _ua.match(/(ipad|iphone|ipod)/i), _likesHTML5 = (_ua.match(/(mobile|pre\/|xoom)/i) || _is_iDevice), _isIE = _ua.match(/msie/i), _isWebkit = _ua.match(/webkit/i), _isSafari = (_ua.match(/safari/i) && !_ua.match(/chrome/i)), _isOpera = (_ua.match(/opera/i)), 
-  _isBadSafari = (!_wl.match(/usehtml5audio/i) && !_wl.match(/sm2\-ignorebadua/i) && _isSafari && _ua.match(/OS X 10_6_([3-7])/i)), // Safari 4 and 5 occasionally fail to load/play HTML5 audio on Snow Leopard 10.6.3 through 10.6.7 due to bug(s) in QuickTime X and/or other underlying frameworks. :/ Confirmed bug. /web/20160305093213/https://bugs.webkit.org/show_bug.cgi?id=32159
+  _isBadSafari = (!_wl.match(/usehtml5audio/i) && !_wl.match(/sm2\-ignorebadua/i) && _isSafari && _ua.match(/OS X 10_6_([3-7])/i)), // Safari 4 and 5 occasionally fail to load/play HTML5 audio on Snow Leopard 10.6.3 through 10.6.7 due to bug(s) in QuickTime X and/or other underlying frameworks. :/ Confirmed bug. https://bugs.webkit.org/show_bug.cgi?id=32159
   _hasConsole = (typeof console !== 'undefined' && typeof console.log !== 'undefined'), _isFocused = (typeof _doc.hasFocus !== 'undefined'?_doc.hasFocus():null), _tryInitOnFocus = (_isSafari && typeof _doc.hasFocus === 'undefined'), _okToDisable = !_tryInitOnFocus, _flashMIME = /(mp3|mp4|mpa)/i,
   _emptyURL = 'about:blank', // safe URL to unload, or load nothing from (flash 8 + most HTML5 UAs)
   _overHTTP = (_doc.location?_doc.location.protocol.match(/http/i):null),
@@ -1584,7 +1571,7 @@ function SoundManager(smURL, smID) {
 
       if (_t.paused && _t.position && _t.position > 0) {
 
-        // /web/20160305093213/https://gist.github.com/37b17df75cc4d7a90bf6
+        // https://gist.github.com/37b17df75cc4d7a90bf6
         _s._wD(fN + '"' + _t.sID + '" is resuming from paused state',1);
         _t.resume();
 
@@ -2281,7 +2268,7 @@ function SoundManager(smURL, smID) {
 
       }
 
-      // boolean instead of "loop", for webkit? - spec says string. /web/20160305093213/http://www.w3.org/TR/html-markup/audio.html#audio.attrs.loop
+      // boolean instead of "loop", for webkit? - spec says string. http://www.w3.org/TR/html-markup/audio.html#audio.attrs.loop
       _a.loop = (_iO.loops>1?'loop':'');
 
       return _a;
@@ -2859,7 +2846,7 @@ function SoundManager(smURL, smID) {
       if (ranges && ranges.length) {
 
         // if loaded is 0, try TimeRanges implementation as % of load
-        // /web/20160305093213/https://developer.mozilla.org/en/DOM/TimeRanges
+        // https://developer.mozilla.org/en/DOM/TimeRanges
 
         for (i=ranges.length; i--;) {
           buffered = (ranges.end(i) - ranges.start(i));
@@ -2950,7 +2937,7 @@ function SoundManager(smURL, smID) {
     /**
      * Internal method: Unload media, and cancel any current/pending network requests.
      * Firefox can load an empty URL, which allegedly destroys the decoder and stops the download.
-     * /web/20160305093213/https://developer.mozilla.org/En/Using_audio_and_video_in_Firefox#Stopping_the_download_of_media
+     * https://developer.mozilla.org/En/Using_audio_and_video_in_Firefox#Stopping_the_download_of_media
      * Other UA behaviour is unclear, so everyone else gets an about:blank-style URL.
      */
 
@@ -3124,7 +3111,7 @@ function SoundManager(smURL, smID) {
     swf404: _sm + ': Verify that %s is a valid path.',
     tryDebug: 'Try ' + _sm + '.debugFlash = true for more security details (output goes to SWF.)',
     checkSWF: 'See SWF output for more debug info.',
-    localFail: _sm + ': Non-HTTP page (' + _doc.location.protocol + ' URL?) Review Flash player security settings for this special case:\n/web/20160305093213/http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html\nMay need to add/allow path, eg. c:/sm2/ or /users/me/sm2/',
+    localFail: _sm + ': Non-HTTP page (' + _doc.location.protocol + ' URL?) Review Flash player security settings for this special case:\nhttp://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html\nMay need to add/allow path, eg. c:/sm2/ or /users/me/sm2/',
     waitFocus: _sm + ': Special case: Waiting for focus-related event..',
     waitImpatient: _sm + ': Getting impatient, still waiting for Flash%s...',
     waitForever: _sm + ': Waiting indefinitely for Flash (will recover if unblocked)...',
@@ -3139,7 +3126,7 @@ function SoundManager(smURL, smID) {
     init: _smc + 'init()',
     didInit: _smc + 'init(): Already called?',
     flashJS: _sm + ': Attempting to call Flash from JS..',
-    secNote: 'Flash security note: Network/internet URLs will not load due to security restrictions. Access can be configured via Flash Player Global Security Settings Page: /web/20160305093213/http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html',
+    secNote: 'Flash security note: Network/internet URLs will not load due to security restrictions. Access can be configured via Flash Player Global Security Settings Page: http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html',
     badRemove: 'Warning: Failed to remove flash movie.',
     noPeak: 'Warning: peakData features unsupported for movieStar formats',
     shutdown: _sm + '.disable(): Shutting down',
@@ -3627,7 +3614,7 @@ function SoundManager(smURL, smID) {
 
   _detectFlash = function() {
 
-    // hat tip: Flash Detect library (BSD, (C) 2007) by Carl "DocYes" S. Yestrau - /web/20160305093213/http://featureblend.com/javascript-flash-detection-library.html / /web/20160305093213/http://featureblend.com/license.txt
+    // hat tip: Flash Detect library (BSD, (C) 2007) by Carl "DocYes" S. Yestrau - http://featureblend.com/javascript-flash-detection-library.html / http://featureblend.com/license.txt
 
     if (_hasFlash !== undefined) {
       // this work has already been done.
@@ -3690,7 +3677,7 @@ function SoundManager(smURL, smID) {
         _s.hasHTML5 = true;
       }
       if (_isBadSafari) {
-        _s._wD(_smc+'Note: Buggy HTML5 Audio in Safari on this OS X release, see /web/20160305093213/https://bugs.webkit.org/show_bug.cgi?id=32159 - '+(!_hasFlash?' would use flash fallback for MP3/MP4, but none detected.':'will use flash fallback for MP3/MP4, if available'),1);
+        _s._wD(_smc+'Note: Buggy HTML5 Audio in Safari on this OS X release, see https://bugs.webkit.org/show_bug.cgi?id=32159 - '+(!_hasFlash?' would use flash fallback for MP3/MP4, but none detected.':'will use flash fallback for MP3/MP4, if available'),1);
         if (_detectFlash()) {
           return true;
         }
@@ -3925,7 +3912,7 @@ function SoundManager(smURL, smID) {
       'title': swfTitle,
       'type': 'application/x-shockwave-flash',
       'wmode': _s.wmode,
-      // /web/20160305093213/http://help.adobe.com/en_US/as3/mobile/WS4bebcd66a74275c36cfb8137124318eebc6-7ffd.html
+      // http://help.adobe.com/en_US/as3/mobile/WS4bebcd66a74275c36cfb8137124318eebc6-7ffd.html
       'hasPriority': 'true'
     };
 
@@ -4331,7 +4318,7 @@ function SoundManager(smURL, smID) {
 
       if (!_s.html5Only) {
         // prevent browser from showing cached page state (or rather, restoring "suspended" page state) via back button, because flash may be dead
-        // /web/20160305093213/http://www.webkit.org/blog/516/webkit-page-cache-ii-the-unload-event/
+        // http://www.webkit.org/blog/516/webkit-page-cache-ii-the-unload-event/
         _event.add(_win, 'unload', _doNothing);
       }
 
@@ -4471,7 +4458,7 @@ function SoundManager(smURL, smID) {
 
 } // SoundManager()
 
-// SM2_DEFER details: /web/20160305093213/http://www.schillmania.com/projects/soundmanager2/doc/getstarted/#lazy-loading
+// SM2_DEFER details: http://www.schillmania.com/projects/soundmanager2/doc/getstarted/#lazy-loading
 
 if (typeof SM2_DEFER === 'undefined' || !SM2_DEFER) {
   soundManager = new SoundManager();
