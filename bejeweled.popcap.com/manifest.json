@@ -1,0 +1,20 @@
+{
+  "short_name": "Angry Birds",
+  "name": "Angry Birds Chrome",
+  "icons": [
+    {
+      "src": "icon24.png",
+      "type": "image/png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#92D9FE",
+  "background_color": "#52B3EE"
+}
