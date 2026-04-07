@@ -1,6 +1,6 @@
 {
-  "short_name": "Angry Birds",
-  "name": "Angry Birds Chrome",
+  "short_name": "Bejeweled",
+  "name": "Bejeweled",
   "icons": [
     {
       "src": "icon24.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#92D9FE",
-  "background_color": "#52B3EE"
+  "theme_color": "#829DBB",
+  "background_color": "#6C76B4"
 }
